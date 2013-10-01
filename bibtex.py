@@ -8,7 +8,7 @@ def format(data, reftype="article"):
     for key, val in data.iteritems():
         entry += "\t{0} = {{{1}}},\n".format(key, val)
     entry += "}}"
-    return entry.encode('utf8')
+    return entry.decode('utf8')
 
 def wrap(string):
     '''Wrap all capital letters in curly braces to preserve their
